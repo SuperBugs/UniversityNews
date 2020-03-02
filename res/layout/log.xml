@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    style="@style/mid_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/bg_login_div"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/login_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_label_username" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/login_user_input"
+            android:background="@drawable/whitebg"
+            android:hint="@string/login_username_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/login_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginTop="10px"
+            android:layout_alignRight="@id/password_edit"
+            android:layout_below="@id/password_edit"
+            android:background="@drawable/bg_blue"
+            android:text="@string/login_label_signin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/login_register_link"
+            android:textColor="#888"
+            />
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/register_link"
+            android:layout_toRightOf="@id/register_link"
+            android:background="#00000000"
+            android:text="注册"
+            android:textSize="13dp"
+            android:textColor="#FF0066CC" />
+
+        <ImageView
+            android:id="@+id/miniTwitter_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/miniTwitter_logo"
+            android:layout_toLeftOf="@id/miniTwitter_logo"
+            android:paddingBottom="8dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_login">
+<RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/bg_login_div"
+        android:padding="15dip" >
+        <TextView
+            android:id="@+id/user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_label_username" />
+
+        <EditText
+            android:id="@+id/user_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_below="@id/user_input"
+            android:background="@drawable/whitebg"
+            android:hint="@string/login_username_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/name_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_edit"
+            android:layout_marginTop="3dp"
+            android:text="昵称" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_below="@id/name_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+ <TextView
+            android:id="@+id/gender_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_edit"
+            android:layout_marginTop="3dp"
+            android:text="性别" />
+
+        <EditText
+            android:id="@+id/gender_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_below="@id/gender_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" />
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_below="@id/login_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/repassword_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edit"
+            android:layout_marginTop="3dp"
+            android:text="密码确认" />
+
+        <EditText
+            android:id="@+id/repassword_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/repassword_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+         <TextView
+            android:id="@+id/u_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repassword_edit"
+            android:layout_marginTop="3dp"
+            android:text="学校" />
+
+        <EditText
+            android:id="@+id/u_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_below="@id/u_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:background="@drawable/whitebg"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="wrap_content"
+            android:layout_height="39dip"
+            android:layout_below="@+id/u_edit"
+            android:layout_marginTop="10px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_blue"
+            android:text="修改信息" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

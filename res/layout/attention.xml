@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6">
+    <LinearLayout style="@style/wrap_layout">
+         <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/search"
+                android:editable="true"
+                android:hint="搜索"
+                android:textSize="20sp" >
+            </EditText>
+    </LinearLayout>
+
+ <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout"
+            android:id="@+id/but1">
+            <TextView style="@style/usertext" android:text="关注的学校" />
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+          <!-- 无圆角-->
+       <LinearLayout style="@style/mid_layout"
+           android:id="@+id/but2">
+            <TextView style="@style/usertext" android:text="关注的人" />
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+    </LinearLayout>
+
+    
+    
+           
+          </LinearLayout>

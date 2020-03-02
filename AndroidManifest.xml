@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unews"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/welcome1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" ><meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gf86LEXmvlmExtUQVWmqeFtqacp4fR0U" />
+
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".News"
+            android:label="新鲜事" >
+        </activity>
+        <activity
+            android:name=".Myschool"
+            android:label="我的学校" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="我的信息" >
+        </activity>
+        <activity
+            android:name=".ViewMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Attention"
+            android:label="我的关注" >
+        </activity>
+         <activity
+            android:name=".Log"
+            android:label="登录" >
+        </activity>
+         <activity
+            android:name=".Anew"
+            android:label="头条" >
+        </activity>
+         <activity
+            android:name=".Myinfo"
+            android:label="我的信息" >
+        </activity>
+         <activity
+            android:name=".Mypush"
+            android:label="我的推送" >
+        </activity>
+         <activity
+            android:name=".Myreply"
+            android:label="我的回复" >
+        </activity>
+        <activity
+            android:name=".Regist"
+            android:label="注册" >
+        </activity>
+        <activity
+            android:name=".Lists"
+            android:label="关注列表" >
+        </activity>
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+	
+    </application>
+
+</manifest>
